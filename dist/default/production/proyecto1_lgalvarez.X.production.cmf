@@ -1,0 +1,1143 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/P1_main-config.o
+resVect CODE 0 0 0 3 2 1
+intVect CODE 0 0 0 DE 2 1
+udata_bank0 BANK0 1 20 20 1A 1 1
+udata_shr COMMON 1 70 70 2 1 1
+HEX_INDEX CODE 0 0 0 51D 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 3A-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 3A-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 51D-1FFF 2
+ENTRY 51D-1FFF 2
+IDLOC 2000-2003 2
+CODE 51D-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 51D-1FFF 2
+STRING 51D-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/P1_main-config.o
+0 HEX_INDEX CODE >384:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+200 HEX_INDEX CODE >387:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+201 HEX_INDEX CODE >388:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+202 HEX_INDEX CODE >389:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+203 HEX_INDEX CODE >390:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+204 HEX_INDEX CODE >391:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+205 HEX_INDEX CODE >392:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+206 HEX_INDEX CODE >393:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+207 HEX_INDEX CODE >394:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+208 HEX_INDEX CODE >395:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+209 HEX_INDEX CODE >396:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+20A HEX_INDEX CODE >397:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+20B HEX_INDEX CODE >398:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+20C HEX_INDEX CODE >399:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+20D HEX_INDEX CODE >400:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+20E HEX_INDEX CODE >401:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+20F HEX_INDEX CODE >402:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+210 HEX_INDEX CODE >403:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+211 HEX_INDEX CODE >404:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+212 HEX_INDEX CODE >405:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+213 HEX_INDEX CODE >406:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+214 HEX_INDEX CODE >410:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+215 HEX_INDEX CODE >411:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+216 HEX_INDEX CODE >412:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+217 HEX_INDEX CODE >413:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+218 HEX_INDEX CODE >414:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+219 HEX_INDEX CODE >415:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+21A HEX_INDEX CODE >416:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+21B HEX_INDEX CODE >417:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+21D HEX_INDEX CODE >420:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+21E HEX_INDEX CODE >421:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+21F HEX_INDEX CODE >422:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+220 HEX_INDEX CODE >423:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+221 HEX_INDEX CODE >424:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+222 HEX_INDEX CODE >425:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+223 HEX_INDEX CODE >426:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+224 HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+225 HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+226 HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+227 HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+228 HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+229 HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+22A HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+22B HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+22C HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+22D HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+22E HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+22F HEX_INDEX CODE >429:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+230 HEX_INDEX CODE >430:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+231 HEX_INDEX CODE >434:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+232 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+233 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+234 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+235 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+236 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+237 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+238 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+239 HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+23A HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+23B HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+23C HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+23D HEX_INDEX CODE >437:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+23E HEX_INDEX CODE >438:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+23F HEX_INDEX CODE >439:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+240 HEX_INDEX CODE >440:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+241 HEX_INDEX CODE >440:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+242 HEX_INDEX CODE >440:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+243 HEX_INDEX CODE >440:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+244 HEX_INDEX CODE >440:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+245 HEX_INDEX CODE >440:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+246 HEX_INDEX CODE >441:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+247 HEX_INDEX CODE >442:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+248 HEX_INDEX CODE >442:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+249 HEX_INDEX CODE >442:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+24A HEX_INDEX CODE >442:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+24B HEX_INDEX CODE >442:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+24C HEX_INDEX CODE >442:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+24D HEX_INDEX CODE >443:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+24E HEX_INDEX CODE >444:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+24F HEX_INDEX CODE >444:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+250 HEX_INDEX CODE >444:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+251 HEX_INDEX CODE >444:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+252 HEX_INDEX CODE >444:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+253 HEX_INDEX CODE >444:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+254 HEX_INDEX CODE >445:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+255 HEX_INDEX CODE >446:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+256 HEX_INDEX CODE >446:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+257 HEX_INDEX CODE >446:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+258 HEX_INDEX CODE >446:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+259 HEX_INDEX CODE >446:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+25A HEX_INDEX CODE >446:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+25B HEX_INDEX CODE >449:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+25C HEX_INDEX CODE >453:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+25E HEX_INDEX CODE >454:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+25F HEX_INDEX CODE >455:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+260 HEX_INDEX CODE >456:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+261 HEX_INDEX CODE >457:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+262 HEX_INDEX CODE >459:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+263 HEX_INDEX CODE >462:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+265 HEX_INDEX CODE >463:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+266 HEX_INDEX CODE >464:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+267 HEX_INDEX CODE >465:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+268 HEX_INDEX CODE >466:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+269 HEX_INDEX CODE >468:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+26B HEX_INDEX CODE >469:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+26C HEX_INDEX CODE >470:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+26D HEX_INDEX CODE >471:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+26E HEX_INDEX CODE >474:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+270 HEX_INDEX CODE >475:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+271 HEX_INDEX CODE >476:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+272 HEX_INDEX CODE >478:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+274 HEX_INDEX CODE >479:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+275 HEX_INDEX CODE >480:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+276 HEX_INDEX CODE >481:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+277 HEX_INDEX CODE >482:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+278 HEX_INDEX CODE >483:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+279 HEX_INDEX CODE >484:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+27A HEX_INDEX CODE >485:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+27B HEX_INDEX CODE >486:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+27C HEX_INDEX CODE >487:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+27D HEX_INDEX CODE >488:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+27E HEX_INDEX CODE >490:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+27F HEX_INDEX CODE >491:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+280 HEX_INDEX CODE >492:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+281 HEX_INDEX CODE >493:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+282 HEX_INDEX CODE >494:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+283 HEX_INDEX CODE >496:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+285 HEX_INDEX CODE >497:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+286 HEX_INDEX CODE >498:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+287 HEX_INDEX CODE >499:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+288 HEX_INDEX CODE >500:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+289 HEX_INDEX CODE >501:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+28A HEX_INDEX CODE >502:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+28B HEX_INDEX CODE >503:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+28C HEX_INDEX CODE >504:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+28D HEX_INDEX CODE >505:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+28E HEX_INDEX CODE >506:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+28F HEX_INDEX CODE >507:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+290 HEX_INDEX CODE >508:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+291 HEX_INDEX CODE >509:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+292 HEX_INDEX CODE >510:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+293 HEX_INDEX CODE >511:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+294 HEX_INDEX CODE >512:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+295 HEX_INDEX CODE >513:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+296 HEX_INDEX CODE >514:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+297 HEX_INDEX CODE >515:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+298 HEX_INDEX CODE >516:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+299 HEX_INDEX CODE >517:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+29A HEX_INDEX CODE >518:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+29B HEX_INDEX CODE >519:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+29C HEX_INDEX CODE >520:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+29D HEX_INDEX CODE >521:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+29E HEX_INDEX CODE >522:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+29F HEX_INDEX CODE >523:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A0 HEX_INDEX CODE >524:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A1 HEX_INDEX CODE >525:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A2 HEX_INDEX CODE >528:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A4 HEX_INDEX CODE >529:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A5 HEX_INDEX CODE >530:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A6 HEX_INDEX CODE >531:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A7 HEX_INDEX CODE >532:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A8 HEX_INDEX CODE >533:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A9 HEX_INDEX CODE >535:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2AB HEX_INDEX CODE >536:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2AC HEX_INDEX CODE >537:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2AD HEX_INDEX CODE >538:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2AE HEX_INDEX CODE >539:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2AF HEX_INDEX CODE >542:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B1 HEX_INDEX CODE >543:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B2 HEX_INDEX CODE >544:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B3 HEX_INDEX CODE >545:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B4 HEX_INDEX CODE >546:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B5 HEX_INDEX CODE >547:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B6 HEX_INDEX CODE >548:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B7 HEX_INDEX CODE >550:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B8 HEX_INDEX CODE >550:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B9 HEX_INDEX CODE >550:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2BA HEX_INDEX CODE >550:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2BB HEX_INDEX CODE >550:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2BC HEX_INDEX CODE >552:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2BD HEX_INDEX CODE >555:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2BF HEX_INDEX CODE >556:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C0 HEX_INDEX CODE >557:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C1 HEX_INDEX CODE >559:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C3 HEX_INDEX CODE >560:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C4 HEX_INDEX CODE >561:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C5 HEX_INDEX CODE >563:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C6 HEX_INDEX CODE >564:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C7 HEX_INDEX CODE >565:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C8 HEX_INDEX CODE >566:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C9 HEX_INDEX CODE >567:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2CA HEX_INDEX CODE >568:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2CB HEX_INDEX CODE >571:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2CD HEX_INDEX CODE >572:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2CE HEX_INDEX CODE >573:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2CF HEX_INDEX CODE >575:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D1 HEX_INDEX CODE >576:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D2 HEX_INDEX CODE >577:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D3 HEX_INDEX CODE >578:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D4 HEX_INDEX CODE >579:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D5 HEX_INDEX CODE >580:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D6 HEX_INDEX CODE >581:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D7 HEX_INDEX CODE >582:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D8 HEX_INDEX CODE >583:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D9 HEX_INDEX CODE >584:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2DA HEX_INDEX CODE >588:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2DB HEX_INDEX CODE >589:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2DC HEX_INDEX CODE >590:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2DD HEX_INDEX CODE >591:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2DE HEX_INDEX CODE >592:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2DF HEX_INDEX CODE >593:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E0 HEX_INDEX CODE >594:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E1 HEX_INDEX CODE >595:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E2 HEX_INDEX CODE >596:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E3 HEX_INDEX CODE >597:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E4 HEX_INDEX CODE >598:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E5 HEX_INDEX CODE >599:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E6 HEX_INDEX CODE >600:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E7 HEX_INDEX CODE >601:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E8 HEX_INDEX CODE >602:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E9 HEX_INDEX CODE >603:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2EA HEX_INDEX CODE >604:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2EB HEX_INDEX CODE >605:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2EC HEX_INDEX CODE >606:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2ED HEX_INDEX CODE >607:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2EE HEX_INDEX CODE >608:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2EF HEX_INDEX CODE >609:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F0 HEX_INDEX CODE >611:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F1 HEX_INDEX CODE >612:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F2 HEX_INDEX CODE >613:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F3 HEX_INDEX CODE >614:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F4 HEX_INDEX CODE >615:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F5 HEX_INDEX CODE >617:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F6 HEX_INDEX CODE >620:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F7 HEX_INDEX CODE >621:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F8 HEX_INDEX CODE >622:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F9 HEX_INDEX CODE >623:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2FA HEX_INDEX CODE >624:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2FB HEX_INDEX CODE >625:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2FC HEX_INDEX CODE >626:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2FD HEX_INDEX CODE >629:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2FE HEX_INDEX CODE >630:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2FF HEX_INDEX CODE >631:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+300 HEX_INDEX CODE >632:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+301 HEX_INDEX CODE >633:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+302 HEX_INDEX CODE >634:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+303 HEX_INDEX CODE >635:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+304 HEX_INDEX CODE >636:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+305 HEX_INDEX CODE >637:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+306 HEX_INDEX CODE >640:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+307 HEX_INDEX CODE >641:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+308 HEX_INDEX CODE >642:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+309 HEX_INDEX CODE >643:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+30A HEX_INDEX CODE >644:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+30B HEX_INDEX CODE >645:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+30C HEX_INDEX CODE >646:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+30D HEX_INDEX CODE >647:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+30E HEX_INDEX CODE >648:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+30F HEX_INDEX CODE >651:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+310 HEX_INDEX CODE >652:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+311 HEX_INDEX CODE >653:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+312 HEX_INDEX CODE >654:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+313 HEX_INDEX CODE >655:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+314 HEX_INDEX CODE >656:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+315 HEX_INDEX CODE >657:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+316 HEX_INDEX CODE >658:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+317 HEX_INDEX CODE >659:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+318 HEX_INDEX CODE >662:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+319 HEX_INDEX CODE >663:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+31A HEX_INDEX CODE >664:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+31B HEX_INDEX CODE >668:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+31C HEX_INDEX CODE >669:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+31D HEX_INDEX CODE >670:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+31E HEX_INDEX CODE >671:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+31F HEX_INDEX CODE >672:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+320 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+321 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+322 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+323 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+324 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+325 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+326 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+327 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+328 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+329 HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+32A HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+32B HEX_INDEX CODE >673:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+32C HEX_INDEX CODE >674:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+32D HEX_INDEX CODE >674:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+32E HEX_INDEX CODE >674:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+32F HEX_INDEX CODE >674:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+330 HEX_INDEX CODE >674:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+331 HEX_INDEX CODE >675:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+332 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+333 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+334 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+335 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+336 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+337 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+338 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+339 HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+33A HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+33B HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+33C HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+33D HEX_INDEX CODE >676:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+33E HEX_INDEX CODE >677:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+33F HEX_INDEX CODE >677:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+340 HEX_INDEX CODE >677:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+341 HEX_INDEX CODE >677:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+342 HEX_INDEX CODE >677:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+343 HEX_INDEX CODE >678:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+344 HEX_INDEX CODE >679:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+345 HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+346 HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+347 HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+348 HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+349 HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+34A HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+34B HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+34C HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+34D HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+34E HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+34F HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+350 HEX_INDEX CODE >680:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+351 HEX_INDEX CODE >682:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+352 HEX_INDEX CODE >683:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+353 HEX_INDEX CODE >684:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+354 HEX_INDEX CODE >685:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+355 HEX_INDEX CODE >686:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+356 HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+357 HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+358 HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+359 HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+35A HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+35B HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+35C HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+35D HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+35E HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+35F HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+360 HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+361 HEX_INDEX CODE >687:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+362 HEX_INDEX CODE >688:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+363 HEX_INDEX CODE >689:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+364 HEX_INDEX CODE >690:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+365 HEX_INDEX CODE >690:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+366 HEX_INDEX CODE >690:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+367 HEX_INDEX CODE >690:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+368 HEX_INDEX CODE >690:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+369 HEX_INDEX CODE >691:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+36A HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+36B HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+36C HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+36D HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+36E HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+36F HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+370 HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+371 HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+372 HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+373 HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+374 HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+375 HEX_INDEX CODE >692:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+376 HEX_INDEX CODE >693:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+377 HEX_INDEX CODE >694:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+378 HEX_INDEX CODE >695:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+379 HEX_INDEX CODE >696:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+37A HEX_INDEX CODE >697:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+37B HEX_INDEX CODE >699:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+37C HEX_INDEX CODE >700:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+37D HEX_INDEX CODE >701:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+37E HEX_INDEX CODE >702:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+37F HEX_INDEX CODE >703:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+380 HEX_INDEX CODE >704:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+381 HEX_INDEX CODE >705:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+382 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+383 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+384 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+385 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+386 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+387 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+388 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+389 HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+38A HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+38B HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+38C HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+38D HEX_INDEX CODE >706:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+38E HEX_INDEX CODE >707:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+38F HEX_INDEX CODE >710:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+390 HEX_INDEX CODE >711:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+391 HEX_INDEX CODE >712:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+392 HEX_INDEX CODE >713:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+393 HEX_INDEX CODE >714:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+394 HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+395 HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+396 HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+397 HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+398 HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+399 HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+39A HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+39B HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+39C HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+39D HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+39E HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+39F HEX_INDEX CODE >715:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A0 HEX_INDEX CODE >716:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A1 HEX_INDEX CODE >716:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A2 HEX_INDEX CODE >716:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A3 HEX_INDEX CODE >716:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A4 HEX_INDEX CODE >716:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A5 HEX_INDEX CODE >717:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A6 HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A7 HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A8 HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A9 HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3AA HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3AB HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3AC HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3AD HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3AE HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3AF HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B0 HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B1 HEX_INDEX CODE >718:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B2 HEX_INDEX CODE >719:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B3 HEX_INDEX CODE >719:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B4 HEX_INDEX CODE >719:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B5 HEX_INDEX CODE >719:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B6 HEX_INDEX CODE >719:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B7 HEX_INDEX CODE >720:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B8 HEX_INDEX CODE >721:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B9 HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3BA HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3BB HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3BC HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3BD HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3BE HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3BF HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C0 HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C1 HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C2 HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C3 HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C4 HEX_INDEX CODE >722:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C5 HEX_INDEX CODE >724:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C6 HEX_INDEX CODE >725:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C7 HEX_INDEX CODE >726:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C8 HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C9 HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3CA HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3CB HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3CC HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3CD HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3CE HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3CF HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D0 HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D1 HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D2 HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D3 HEX_INDEX CODE >727:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D4 HEX_INDEX CODE >728:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D5 HEX_INDEX CODE >728:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D6 HEX_INDEX CODE >728:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D7 HEX_INDEX CODE >728:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D8 HEX_INDEX CODE >728:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D9 HEX_INDEX CODE >729:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3DA HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3DB HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3DC HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3DD HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3DE HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3DF HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E0 HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E1 HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E2 HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E3 HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E4 HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E5 HEX_INDEX CODE >730:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E6 HEX_INDEX CODE >731:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E7 HEX_INDEX CODE >731:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E8 HEX_INDEX CODE >731:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E9 HEX_INDEX CODE >731:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3EA HEX_INDEX CODE >731:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3EB HEX_INDEX CODE >732:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3EC HEX_INDEX CODE >733:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3ED HEX_INDEX CODE >736:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3EE HEX_INDEX CODE >740:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3EF HEX_INDEX CODE >741:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F0 HEX_INDEX CODE >742:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F1 HEX_INDEX CODE >743:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F2 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F3 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F4 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F5 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F6 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F7 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F8 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F9 HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3FA HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3FB HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3FC HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3FD HEX_INDEX CODE >744:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3FE HEX_INDEX CODE >745:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3FF HEX_INDEX CODE >746:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+400 HEX_INDEX CODE >747:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+401 HEX_INDEX CODE >748:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+402 HEX_INDEX CODE >749:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+403 HEX_INDEX CODE >750:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+404 HEX_INDEX CODE >751:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+405 HEX_INDEX CODE >752:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+406 HEX_INDEX CODE >753:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+407 HEX_INDEX CODE >754:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+408 HEX_INDEX CODE >755:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+409 HEX_INDEX CODE >756:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+40A HEX_INDEX CODE >757:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+40B HEX_INDEX CODE >758:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+40C HEX_INDEX CODE >759:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+40D HEX_INDEX CODE >760:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+40E HEX_INDEX CODE >761:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+40F HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+410 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+411 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+412 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+413 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+414 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+415 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+416 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+417 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+418 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+419 HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+41A HEX_INDEX CODE >762:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+41B HEX_INDEX CODE >763:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+41C HEX_INDEX CODE >765:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+41D HEX_INDEX CODE >766:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+41E HEX_INDEX CODE >767:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+41F HEX_INDEX CODE >768:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+420 HEX_INDEX CODE >769:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+421 HEX_INDEX CODE >770:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+422 HEX_INDEX CODE >772:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+423 HEX_INDEX CODE >773:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+424 HEX_INDEX CODE >774:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+425 HEX_INDEX CODE >775:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+426 HEX_INDEX CODE >776:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+427 HEX_INDEX CODE >777:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+428 HEX_INDEX CODE >778:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+429 HEX_INDEX CODE >779:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+42A HEX_INDEX CODE >781:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+42B HEX_INDEX CODE >782:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+42C HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+42D HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+42E HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+42F HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+430 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+431 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+432 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+433 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+434 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+435 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+436 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+437 HEX_INDEX CODE >783:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+438 HEX_INDEX CODE >784:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+439 HEX_INDEX CODE >786:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+43A HEX_INDEX CODE >787:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+43B HEX_INDEX CODE >788:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+43C HEX_INDEX CODE >789:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+43D HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+43E HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+43F HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+440 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+441 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+442 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+443 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+444 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+445 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+446 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+447 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+448 HEX_INDEX CODE >790:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+449 HEX_INDEX CODE >791:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+44A HEX_INDEX CODE >792:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+44B HEX_INDEX CODE >793:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+44C HEX_INDEX CODE >794:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+44D HEX_INDEX CODE >795:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+44E HEX_INDEX CODE >796:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+44F HEX_INDEX CODE >797:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+450 HEX_INDEX CODE >798:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+451 HEX_INDEX CODE >799:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+452 HEX_INDEX CODE >800:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+453 HEX_INDEX CODE >801:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+454 HEX_INDEX CODE >802:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+455 HEX_INDEX CODE >803:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+456 HEX_INDEX CODE >804:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+457 HEX_INDEX CODE >805:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+458 HEX_INDEX CODE >806:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+459 HEX_INDEX CODE >807:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+45A HEX_INDEX CODE >808:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+45B HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+45C HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+45D HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+45E HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+45F HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+460 HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+461 HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+462 HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+463 HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+464 HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+465 HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+466 HEX_INDEX CODE >809:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+467 HEX_INDEX CODE >810:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+468 HEX_INDEX CODE >812:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+469 HEX_INDEX CODE >813:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+46A HEX_INDEX CODE >814:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+46B HEX_INDEX CODE >815:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+46C HEX_INDEX CODE >816:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+46D HEX_INDEX CODE >817:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+46E HEX_INDEX CODE >818:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+46F HEX_INDEX CODE >820:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+470 HEX_INDEX CODE >821:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+471 HEX_INDEX CODE >822:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+472 HEX_INDEX CODE >823:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+473 HEX_INDEX CODE >824:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+474 HEX_INDEX CODE >825:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+475 HEX_INDEX CODE >826:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+476 HEX_INDEX CODE >827:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+477 HEX_INDEX CODE >829:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+478 HEX_INDEX CODE >830:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+479 HEX_INDEX CODE >831:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+47A HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+47B HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+47C HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+47D HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+47E HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+47F HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+480 HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+481 HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+482 HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+483 HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+484 HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+485 HEX_INDEX CODE >832:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+486 HEX_INDEX CODE >833:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+487 HEX_INDEX CODE >837:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+488 HEX_INDEX CODE >838:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+489 HEX_INDEX CODE >839:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+48A HEX_INDEX CODE >840:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+48B HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+48C HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+48D HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+48E HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+48F HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+490 HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+491 HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+492 HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+493 HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+494 HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+495 HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+496 HEX_INDEX CODE >841:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+497 HEX_INDEX CODE >842:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+498 HEX_INDEX CODE >843:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+499 HEX_INDEX CODE >843:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+49A HEX_INDEX CODE >843:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+49B HEX_INDEX CODE >843:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+49C HEX_INDEX CODE >843:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+49D HEX_INDEX CODE >843:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+49E HEX_INDEX CODE >844:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+49F HEX_INDEX CODE >845:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A0 HEX_INDEX CODE >845:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A1 HEX_INDEX CODE >845:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A2 HEX_INDEX CODE >845:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A3 HEX_INDEX CODE >845:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A4 HEX_INDEX CODE >845:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A5 HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A6 HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A7 HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A8 HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A9 HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4AA HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4AB HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4AC HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4AD HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4AE HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4AF HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B0 HEX_INDEX CODE >846:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B1 HEX_INDEX CODE >848:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B2 HEX_INDEX CODE >849:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B3 HEX_INDEX CODE >850:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B4 HEX_INDEX CODE >851:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B5 HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B6 HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B7 HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B8 HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B9 HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4BA HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4BB HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4BC HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4BD HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4BE HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4BF HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C0 HEX_INDEX CODE >852:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C1 HEX_INDEX CODE >853:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C2 HEX_INDEX CODE >854:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C3 HEX_INDEX CODE >854:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C4 HEX_INDEX CODE >854:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C5 HEX_INDEX CODE >854:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C6 HEX_INDEX CODE >854:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C7 HEX_INDEX CODE >854:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C8 HEX_INDEX CODE >855:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C9 HEX_INDEX CODE >856:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4CA HEX_INDEX CODE >856:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4CB HEX_INDEX CODE >856:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4CC HEX_INDEX CODE >856:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4CD HEX_INDEX CODE >856:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4CE HEX_INDEX CODE >856:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4CF HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D0 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D1 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D2 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D3 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D4 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D5 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D6 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D7 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D8 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D9 HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4DA HEX_INDEX CODE >857:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4DB HEX_INDEX CODE >860:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4DC HEX_INDEX CODE >863:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4DD HEX_INDEX CODE >864:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4DE HEX_INDEX CODE >865:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4DF HEX_INDEX CODE >868:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E0 HEX_INDEX CODE >869:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E1 HEX_INDEX CODE >870:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E2 HEX_INDEX CODE >871:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E3 HEX_INDEX CODE >872:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E4 HEX_INDEX CODE >873:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E5 HEX_INDEX CODE >874:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E6 HEX_INDEX CODE >877:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E7 HEX_INDEX CODE >878:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E8 HEX_INDEX CODE >879:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E9 HEX_INDEX CODE >880:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4EA HEX_INDEX CODE >881:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4EB HEX_INDEX CODE >882:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4EC HEX_INDEX CODE >883:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4ED HEX_INDEX CODE >886:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4EE HEX_INDEX CODE >887:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4EF HEX_INDEX CODE >888:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F0 HEX_INDEX CODE >889:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F1 HEX_INDEX CODE >890:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F2 HEX_INDEX CODE >891:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F3 HEX_INDEX CODE >892:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F4 HEX_INDEX CODE >893:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F5 HEX_INDEX CODE >897:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F6 HEX_INDEX CODE >898:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F7 HEX_INDEX CODE >899:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F8 HEX_INDEX CODE >900:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F9 HEX_INDEX CODE >901:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4FA HEX_INDEX CODE >902:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4FB HEX_INDEX CODE >903:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4FC HEX_INDEX CODE >904:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4FD HEX_INDEX CODE >905:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4FE HEX_INDEX CODE >906:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4FF HEX_INDEX CODE >907:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+500 HEX_INDEX CODE >908:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+501 HEX_INDEX CODE >909:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+502 HEX_INDEX CODE >910:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+503 HEX_INDEX CODE >911:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+504 HEX_INDEX CODE >912:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+505 HEX_INDEX CODE >915:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+506 HEX_INDEX CODE >916:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+507 HEX_INDEX CODE >917:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+508 HEX_INDEX CODE >918:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+509 HEX_INDEX CODE >919:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+50A HEX_INDEX CODE >920:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+50B HEX_INDEX CODE >923:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+50C HEX_INDEX CODE >924:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+50D HEX_INDEX CODE >925:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+50E HEX_INDEX CODE >926:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+50F HEX_INDEX CODE >927:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+510 HEX_INDEX CODE >928:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+511 HEX_INDEX CODE >931:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+512 HEX_INDEX CODE >932:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+513 HEX_INDEX CODE >933:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+514 HEX_INDEX CODE >934:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+515 HEX_INDEX CODE >935:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+516 HEX_INDEX CODE >936:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+517 HEX_INDEX CODE >939:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+518 HEX_INDEX CODE >940:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+519 HEX_INDEX CODE >941:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+51A HEX_INDEX CODE >942:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+51B HEX_INDEX CODE >943:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+51C HEX_INDEX CODE >944:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+0 intVect CODE >148:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4 intVect CODE >152:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+5 intVect CODE >153:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+6 intVect CODE >154:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+7 intVect CODE >157:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+8 intVect CODE >158:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+9 intVect CODE >160:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A intVect CODE >161:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B intVect CODE >163:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C intVect CODE >164:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D intVect CODE >165:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+E intVect CODE >166:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+F intVect CODE >168:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+10 intVect CODE >169:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+11 intVect CODE >172:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+12 intVect CODE >173:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+13 intVect CODE >174:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+14 intVect CODE >175:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+15 intVect CODE >176:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+16 intVect CODE >180:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+18 intVect CODE >181:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+19 intVect CODE >182:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+1A intVect CODE >183:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+1B intVect CODE >184:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+1C intVect CODE >185:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+1D intVect CODE >186:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+1E intVect CODE >187:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+1F intVect CODE >188:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+20 intVect CODE >189:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+21 intVect CODE >190:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+22 intVect CODE >193:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+24 intVect CODE >193:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+25 intVect CODE >193:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+26 intVect CODE >193:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+27 intVect CODE >194:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+28 intVect CODE >195:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+29 intVect CODE >196:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2A intVect CODE >199:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2B intVect CODE >199:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2C intVect CODE >199:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2D intVect CODE >199:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2E intVect CODE >199:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2F intVect CODE >200:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+30 intVect CODE >201:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+31 intVect CODE >202:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+32 intVect CODE >203:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+33 intVect CODE >204:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+34 intVect CODE >205:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+35 intVect CODE >208:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+36 intVect CODE >209:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+37 intVect CODE >210:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+38 intVect CODE >212:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+39 intVect CODE >213:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3A intVect CODE >214:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3B intVect CODE >215:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3C intVect CODE >216:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3D intVect CODE >217:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3E intVect CODE >218:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+3F intVect CODE >221:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+40 intVect CODE >222:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+41 intVect CODE >223:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+42 intVect CODE >224:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+43 intVect CODE >225:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+44 intVect CODE >226:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+45 intVect CODE >227:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+46 intVect CODE >230:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+47 intVect CODE >231:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+48 intVect CODE >232:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+49 intVect CODE >233:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4A intVect CODE >234:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4B intVect CODE >235:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4C intVect CODE >236:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4D intVect CODE >239:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4E intVect CODE >240:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+4F intVect CODE >241:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+50 intVect CODE >242:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+51 intVect CODE >243:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+52 intVect CODE >244:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+53 intVect CODE >245:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+54 intVect CODE >246:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+55 intVect CODE >247:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+56 intVect CODE >248:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+57 intVect CODE >251:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+58 intVect CODE >252:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+59 intVect CODE >253:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+5A intVect CODE >254:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+5B intVect CODE >255:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+5C intVect CODE >256:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+5D intVect CODE >257:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+5E intVect CODE >258:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+5F intVect CODE >259:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+60 intVect CODE >262:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+61 intVect CODE >263:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+62 intVect CODE >264:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+63 intVect CODE >265:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+64 intVect CODE >266:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+65 intVect CODE >267:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+66 intVect CODE >268:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+67 intVect CODE >269:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+68 intVect CODE >270:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+69 intVect CODE >273:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+6A intVect CODE >274:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+6B intVect CODE >275:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+6C intVect CODE >276:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+6D intVect CODE >277:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+6E intVect CODE >278:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+6F intVect CODE >279:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+70 intVect CODE >282:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+71 intVect CODE >283:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+72 intVect CODE >284:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+73 intVect CODE >285:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+74 intVect CODE >286:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+75 intVect CODE >287:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+76 intVect CODE >288:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+77 intVect CODE >291:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+78 intVect CODE >292:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+79 intVect CODE >293:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+7A intVect CODE >294:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+7B intVect CODE >295:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+7C intVect CODE >296:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+7D intVect CODE >297:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+7E intVect CODE >299:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+7F intVect CODE >302:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+80 intVect CODE >303:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+81 intVect CODE >304:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+82 intVect CODE >305:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+83 intVect CODE >306:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+84 intVect CODE >307:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+85 intVect CODE >308:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+86 intVect CODE >311:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+87 intVect CODE >312:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+88 intVect CODE >313:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+89 intVect CODE >314:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+8A intVect CODE >315:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+8B intVect CODE >316:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+8C intVect CODE >317:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+8D intVect CODE >318:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+8E intVect CODE >319:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+8F intVect CODE >320:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+90 intVect CODE >321:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+91 intVect CODE >322:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+92 intVect CODE >323:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+93 intVect CODE >324:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+94 intVect CODE >325:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+95 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+96 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+97 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+98 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+99 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+9A intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+9B intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+9C intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+9D intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+9E intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+9F intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A0 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A1 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A2 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A3 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A4 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A5 intVect CODE >326:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A6 intVect CODE >328:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A7 intVect CODE >329:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A8 intVect CODE >330:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+A9 intVect CODE >331:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+AA intVect CODE >332:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+AB intVect CODE >333:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+AC intVect CODE >335:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+AD intVect CODE >336:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+AE intVect CODE >337:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+AF intVect CODE >338:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B0 intVect CODE >339:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B1 intVect CODE >340:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B2 intVect CODE >341:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B3 intVect CODE >344:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B4 intVect CODE >345:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B5 intVect CODE >346:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B6 intVect CODE >347:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B7 intVect CODE >348:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B8 intVect CODE >349:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+B9 intVect CODE >352:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+BA intVect CODE >353:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+BB intVect CODE >354:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+BC intVect CODE >355:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+BD intVect CODE >356:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+BE intVect CODE >357:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+BF intVect CODE >360:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C0 intVect CODE >361:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C1 intVect CODE >362:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C2 intVect CODE >363:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C3 intVect CODE >364:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C4 intVect CODE >365:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C5 intVect CODE >368:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C6 intVect CODE >369:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C7 intVect CODE >370:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C8 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+C9 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+CA intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+CB intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+CC intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+CD intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+CE intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+CF intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D0 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D1 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D2 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D3 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D4 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D5 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D6 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D7 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D8 intVect CODE >371:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+D9 intVect CODE >372:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+DA intVect CODE >375:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+DB intVect CODE >376:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+DC intVect CODE >377:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+DD intVect CODE >380:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+0 resVect CODE >142:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+0 resVect CODE >144:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+2 resVect CODE >145:C:\Users\luisg\MPLABXProjects\proyecto1_lgalvarez.X\P1_main-config.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 51D 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__HHEX_INDEX 0 0 ABS 0 HEX_INDEX -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__LHEX_INDEX 0 0 ABS 0 HEX_INDEX -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 1A 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
